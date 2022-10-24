@@ -8,7 +8,7 @@ function App() {
   const [review,setReview] =useState('')
 
   const submitReview=()=>{
-    Axios.post("http://localhost:3001/api/insert",{
+    Axios.post("https://backendsszz.herokuapp.com/api/insert",{
       movieName:movieName,
       movieReview:review
     }).then(()=>{
